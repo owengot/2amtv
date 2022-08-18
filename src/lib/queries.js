@@ -16,6 +16,10 @@ export function getPostsQuery(extraFilter) {
   }`
 }
 
+export function getVideosQuery(extraFilter) {
+  return /* groq */ `*[] | order(publishedAt) {}`
+}
+
 /**
  * You can also re-use parts of projections as fragments.
  * In this case, we're defining that, to render an author card, we need their name, slug & image.
