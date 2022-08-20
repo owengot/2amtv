@@ -8,7 +8,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
-import video from './documents/video'
 
 // Object types
 import portableText from './objects/portableText'
@@ -26,7 +25,7 @@ export default createSchema({
     post,
     category,
     author,
-    video,
+
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     portableText,

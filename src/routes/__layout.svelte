@@ -1,15 +1,10 @@
 <script>
-  import Header from '$lib/Header.svelte'
-  import Footer from '$lib/Footer.svelte'
 </script>
-
-<Header blogTitle={'SvelteKit x Sanity Blog'} />
 
 <main style="padding: 1em">
   <slot />
 </main>
 
-<Footer />
 
 <style>
   /* this template uses VanillaCSS: https://vanillacss.com/ */
@@ -36,7 +31,7 @@
   /* Dark Mode Variables */
   @media (prefers-color-scheme: dark) {
     :root {
-      --text-color: #fff;
+      --text-color: #000;
       --link-color: #206ee9;
       --link-color-alt: #1d5dc1;
       --primary-color: darkblue;
@@ -44,7 +39,7 @@
       --tertiary-color: #121923;
     }
     :global(body) {
-      background: #121923;
+      background: #ddd;
     }
   }
 </style>

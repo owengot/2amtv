@@ -16,8 +16,14 @@ export function getPostsQuery(extraFilter) {
   }`
 }
 
-export function getVideosQuery(extraFilter) {
-  return /* groq */ `*[] | order(publishedAt) {}`
+export function getVideos() {
+  return /* groq */ `*[_type == "video"] {
+    title,
+    location,
+    ... video {
+       ... asset->
+    }
+  }`
 }
 
 /**

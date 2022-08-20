@@ -11,6 +11,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@beyonk/svelte-mapbox": "^8.1.4",
     "@portabletext/svelte": "^1.0.0-next.1",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
@@ -25,7 +26,12 @@
   },
   "type": "module",
   "dependencies": {
+    "@mux/mux-video": "^0.8.4",
     "@sanity/client": "^3.3.0",
-    "@sanity/image-url": "^1.0.1"
+    "@sanity/image-url": "^1.0.1",
+    "@svelte-parts/map": "^0.0.24",
+    "leaflet": "^1.8.0",
+    "mapbox-gl": "^2.9.2",
+    "svelte-mapbox-gl": "^0.2.2"
   }
 }
